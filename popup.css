@@ -1,0 +1,88 @@
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+@import url("https://fonts.googleapis.com/css?family=PT+Mono&subset=cyrillic");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Mono', monospace;
+  font-size: 16px;
+}
+
+header {
+  padding: 10px 20px;
+  background: #000;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.current {
+  width: 530px;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+.timetable {
+  width: 100%;
+  table-layout: fixed;
+  margin-top: 20px;
+}
+.timetable__id-col, .timetable__url-col, .timetable__time-col {
+  border-top: 1px solid #eee;
+  border-bottom: 2px solid #666;
+}
+.timetable__id-col {
+  width: 30px;
+}
+.timetable__url-col {
+  width: 350px;
+}
+.timetable__time-col {
+  width: 150px;
+}
+.timetable__tbody-row {
+  background: #e5e5e5;
+}
+.timetable__tbody-row:nth-child(2n) {
+  background: #fff;
+}
+.timetable__id-cell, .timetable__url-cell, .timetable__time-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.timetable__time-cell {
+  position: relative;
+  padding-right: 60px;
+  text-align: center;
+}
+.timetable__time-cell:after {
+  content: " sec";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.timetable__time {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
