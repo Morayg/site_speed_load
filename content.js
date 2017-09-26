@@ -8,6 +8,6 @@ window.onload = function() {
     chrome.runtime.sendMessage({site1:site,time1:time});
     //выводим алерт если время ожидания превысили 10s
     if (time > 10000) {
-    	alert ('Time loading page^<br>' + site + '<br>is: ' + (time/1000) + 'sec');
+    	alert ('Time loading page:<br>' + site + '<br>is: ' + (time/1000) + 'sec');
     }
   };
