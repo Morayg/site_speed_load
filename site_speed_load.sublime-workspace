@@ -1,0 +1,678 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"i",
+				"i"
+			],
+			[
+				"p",
+				"p\tTag"
+			],
+			[
+				"time",
+				"time_R"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "popup.html",
+			"settings":
+			{
+				"buffer_size": 702,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "popup.css",
+			"settings":
+			{
+				"buffer_size": 1451,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "popup.js",
+			"settings":
+			{
+				"buffer_size": 568,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "settings.html",
+			"settings":
+			{
+				"buffer_size": 578,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "settings.js",
+			"settings":
+			{
+				"buffer_size": 288,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "//получает адрес сайта\nvar site = window.location.href;\nvar start = window.performance.timing.domContentLoadedEventEnd;\nvar alert_time;\n\n/*chrome.storage.sync.get(\"alert_t\", function(obj) {\n\tconsole.log(obj)\n\talert_time = obj;\n});\n\na = alert_time.alert_time;\n*/\n\nwindow.onload = function() {\n\tvar time = performance.now();\n\ttime = (time - start) / 1000;\n    chrome.runtime.sendMessage({site1:site,time1:time});\n    //выводим алерт если время ожидания превысили 10s\n    if (time > 1)2 {\n    \talert ('Time loading page: ' + site + ' is: ' + time + ' sec ')\n    }\n  };\n",
+			"file": "content.js",
+			"file_size": 644,
+			"file_write_time": 131510578797037658,
+			"settings":
+			{
+				"buffer_size": 566,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "background.js",
+			"settings":
+			{
+				"buffer_size": 368,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "manifest.json",
+			"settings":
+			{
+				"buffer_size": 632,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/moray/Google Диск/Курсометр 2.0/Документация/structure.xml",
+			"settings":
+			{
+				"buffer_size": 294918,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 38.0,
+		"last_filter": "pack",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/moray/Desktop/Фиксы по нотификациям РБ.txt",
+		"/C/Users/moray/Desktop/structure.xml",
+		"/C/Users/moray/Documents/JS/site_speed_load/settings.js",
+		"/C/Users/moray/AppData/Local/Temp/Temp1_site_speed_load.zip/manifest.json",
+		"/C/Users/moray/Downloads/index.php",
+		"/C/Users/moray/Documents/JS/hello.js",
+		"/C/Users/moray/AppData/Local/lxss/home/Morayg/.ssh/id_rsa.pub",
+		"/C/Users/moray/Google Диск/Курсометр 2.0/Технические записки и черновики брифов/answered.txt",
+		"/C/Users/moray/Documents/JS/Новый текстовый документ.txt",
+		"/C/Users/moray/Documents/JS/site_speed_load/content.js",
+		"/C/Users/moray/AppData/Local/lxss/home/Morayg/.bashrc",
+		"/C/Users/moray/Documents/JS/git_public",
+		"/C/Users/moray/Documents/JS/simple1.js",
+		"/C/Users/moray/Documents/JS/my_static_file_server.js",
+		"/C/Users/moray/AppData/Roaming/Sublime Text 3/Packages/Nodejs/Nodejs.sublime-settings",
+		"/C/Users/moray/OneDrive/Documents/ImageSpark/Курсометр/тестовые данные для отчета по тестам.txt",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_25.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_24.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_23.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_22.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_21.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_20.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_19.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_18.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_17.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_16.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_15.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_14.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_13.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_12.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_11.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_10.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_09.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_08.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_07.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_06.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_05.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_04.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_03.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_02.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/svg/icon_01.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_01.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_25.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_24.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_23.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_22.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_21.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_20.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_19.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_18.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_17.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_16.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_15.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_14.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_13.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_12.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_11.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_10.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_09.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_08.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_07.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_06.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_05.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_04.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_03.svg",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Исходники/icons/icons _vshs/Pif/icon_02.svg",
+		"/C/Users/moray/OneDrive/Documents/ImageSpark/чат РБ.txt",
+		"/C/Users/moray/Desktop/они имеет виду что пользователь несколько раз прох",
+		"/C/Users/moray/Desktop/answered.txt",
+		"/C/Users/moray/OneDrive/Documents/ImageSpark/Курсометр/Бриф по созданию сайта.txt",
+		"/C/Users/moray/Desktop/time_complited/ftp_file_transfer.php",
+		"/C/Users/moray/Desktop/Данные для агрегации/Дата завершения курса/Исходные данные/structure.xml",
+		"/C/Users/moray/Desktop/Данные для агрегации/Дата завершения курса/Финальные данные/final.txt",
+		"/C/Users/moray/OneDrive/Documents/ImageSpark/Курсометр/бриф по сайту.txt",
+		"/C/Users/moray/Desktop/index.php",
+		"/C/Users/moray/OneDrive/Documents/Morayg_LAMP.txt",
+		"//192.168.0.3/files_i_kalygin/projects/vshs_rb_sberbank_pervyj/Файлы/Аналитика/1. Концепция/Путь (исходник).xml",
+		"/C/Users/moray/Desktop/или выпилить аватар.txt",
+		"/C/Users/moray/Desktop/session/index.php",
+		"/C/Users/moray/Desktop/Новый текстовый документ.txt",
+		"/C/Users/moray/AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/structure.xml",
+		"/C/Users/moray/Desktop/time_complited/index.php",
+		"/D/php_ver.php",
+		"/C/Users/moray/Downloads/csv/index.php",
+		"/D/salesbox.csv",
+		"/D/index.php",
+		"/C/Users/moray/Desktop/Для доступа к MySQL",
+		"/C/Users/moray/OneDrive/Documents/ImageSpark/Трек развития.txt",
+		"/C/Users/moray/OneDrive/Documents/ImageSpark/Курсометр/Необходимо реализовать демо-стенд, с курсом КБП, в",
+		"/C/Users/moray/AppData/Local/lxss/home/Morayg/imagespark.pub",
+		"/C/Users/moray/OneDrive/Documents/ImageSpark/бриф по сайту.txt",
+		"/C/Users/moray/Desktop/разработка лендинга для курсометра.txt",
+		"/D/Games/Steam/steamapps/common/Heroes of Might and Magic 5/Editor/CameraExporter.xml",
+		"/C/Users/moray/Desktop/или выпилить аватар",
+		"/C/Users/moray/Desktop/Трек развития.txt",
+		"/C/Users/moray/AppData/Local/Temp/error068040_01.xml",
+		"/C/Users/moray/Desktop/time_complited.php",
+		"/C/Users/moray/Downloads/Telegram Desktop/index.php",
+		"/C/Users/moray/Downloads/Telegram Desktop/HB.php",
+		"/C/Users/moray/Desktop/site_speed_load/background.js",
+		"/C/Users/moray/Desktop/site_speed_load/content.js",
+		"/C/Users/moray/Desktop/site_speed_load/popup.js",
+		"/C/Users/moray/Desktop/site_speed_load/popup.html",
+		"/C/Users/moray/Desktop/site_speed_load/manifest.json",
+		"/D/Klub 17 v 7.4.9/Klub 17 v 7.4.9 update/TK17_V7_Readme.txt",
+		"/C/Users/moray/OneDrive/Documents/ФОТОСФЕРА/Лицензии для ФР/Лицензии для ФР/Точки/Бескудниково/demo-lic/QKkmServer.lic.xml",
+		"/C/Users/moray/Desktop/Хотелки курсометра.txt",
+		"/C/sagit_global_images_7.8.10_20170810.0000.00_7.1_global/flash_all.bat",
+		"/C/Users/moray/Desktop/site_speed_load/Темы для обсуждения в командой Курсометра.txt",
+		"/C/Users/moray/OneDrive/Documents/ФОТОСФЕРА/Лицензии для ФР/Лицензии для ФР/Точки/Офис/demo-lic/QKkmServer.lic.xml",
+		"/C/Users/moray/OneDrive/Documents/ФОТОСФЕРА/Лицензии для ФР/Лицензии для ФР/Точки/Lomonos/ИП Денисов/full-lic/QKkmServer.lic.xml",
+		"/C/Users/moray/OneDrive/Documents/ФОТОСФЕРА/Лицензии для ФР/Лицензии для ФР/Точки/Lomonos/full-lic/QKkmServer.lic.xml",
+		"/C/Users/moray/OneDrive/Documents/ФОТОСФЕРА/Лицензии для ФР/Лицензии для ФР/Точки/Одинцово/full-lic/QKkmServer.lic.xml",
+		"/C/Users/moray/Downloads/windows_aero_cursor___black_version_by_twipeep-d9gtbnz/Aero black/_How to install.txt",
+		"/C/Users/moray/Desktop/api/add_order.php",
+		"/C/Users/moray/AppData/Local/Packages/Microsoft.SkypeApp_kzf8qxf38zg5c/LocalState/Downloads/spp.xml",
+		"/C/Users/moray/Desktop/api/get_client.php",
+		"/C/Users/moray/Documents/Virtual Machines/OS X 10.11/OS X 10.11.vmx",
+		"/C/Users/moray/AppData/Roaming/Skype/My Skype Received Files/RatingTransformer.php",
+		"/C/Users/moray/AppData/Roaming/Skype/My Skype Received Files/CommentTransformer.php",
+		"/D/Games/Prey/Binaries/Danielle/x64/Release/CPY.ini",
+		"/C/Users/moray/Downloads/Max Skills and All Perks FOMod Install-48858-3-1-1/Normal/skillperk",
+		"/D/Games/Need For Speed Underground 2/server.cfg",
+		"/C/Users/moray/Desktop/test.html",
+		"/C/Users/moray/Documents/GitHub/photosfera/fotoproject-node/proc/stat_on_services_process.php",
+		"/C/Users/moray/Maven/Test1/pom.xml",
+		"/C/Users/moray/Maven/Test1/src/main/java/org/selenide/examples/App.java",
+		"/C/Users/moray/Documents/GitHub/photosfera/fotoproject-node/proc/stat_on_services_output.php"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"defect",
+			"nbsp",
+			"weight",
+			"0,1",
+			" ",
+			"weight",
+			"smc.version",
+			"smc.version = \"0\"",
+			"pay_bonus",
+			".TASK_TYPE_SOUVENIR."
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "popup.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 702,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								464,
+								464
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "popup.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1451,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								552,
+								552
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 573.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "popup.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 568,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								568,
+								568
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "settings.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 578,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								569,
+								569
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "settings.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 288,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								288,
+								288
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "content.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								365,
+								372
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "background.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 368,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								256,
+								256
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "manifest.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 632,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								465,
+								409
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Users/moray/Google Диск/Курсометр 2.0/Документация/structure.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 294918,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								241452,
+								241452
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 554.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.nodejs":
+	{
+		"height": 102.0
+	},
+	"pinned_build_system": "",
+	"project": "site_speed_load.sublime-project",
+	"replace":
+	{
+		"height": 55.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 188.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
