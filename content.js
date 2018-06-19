@@ -11,3 +11,4 @@ window.onload = function() {
     	alert ('Time loading page:<br>' + site + '<br>is: ' + (time/1000) + 'sec');
     }
   };
+// Test
